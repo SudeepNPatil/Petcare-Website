@@ -16,8 +16,12 @@ export default function Booking() {
 
     const nextStep = () => setStep((prev => prev + 1));
     const prevStep = () => setStep((prev) => (prev > 1 ? prev - 1 : prev));
-
-
+    /* 
+        const keyarray= Object.keys(collectdata);
+        const count= keyarray.length;
+        if(count===11){
+    
+        } */
 
     return (
 

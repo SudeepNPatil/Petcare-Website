@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -6,12 +7,12 @@ export default function Footer() {
 
             <div>
                 <h1 className="text-2xl font-bold leading-relaxed mb-2">Pet Care</h1>
-                <ul className="leading-8">
-                    <li>Consultation</li>
-                    <li>Pet Products</li>
-                    <li>Shipping</li>
-                    <li>Returns</li>
-                    <li>About Us</li>
+                <ul className="leading-8 flex flex-col">
+                    <Link to="/Consultation">Consultation</Link>
+                    <Link to="/petcare">Pet Products</Link>
+                    <Link to="/petcare">Shipping</Link>
+                    <Link to="/petcare">Returns</Link>
+                    <Link to="/petcare">About Us</Link>
                 </ul>
             </div>
 

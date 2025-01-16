@@ -25,7 +25,7 @@ export default function Booking_step1({ setcollectdata }) {
                 Personal Information
             </div>
 
-            <div className="flex flex-row justify-start ml-20 mb-3">
+            <form className="flex flex-row justify-start ml-20 mb-3">
 
                 <div className="flex flex-col">
 
@@ -52,7 +52,7 @@ export default function Booking_step1({ setcollectdata }) {
 
                 </div>
 
-            </div>
+            </form>
 
             <hr className="w-2/3 bg-gray-500 self-center mt-10 mb-10 border" />
 

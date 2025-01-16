@@ -20,7 +20,7 @@ export default function Booking_step4() {
 
                 <img src={Payment_successful} alt="Payment" className=" animate-bounce h-62 w-60 mt-10 rounded-xl" />
 
-                <p className="text-sm mt-10 w-96 opacity-70">Thank you for caring to your pet and trust Pawcare services!
+                <p className="text-sm mt-10 w-96 opacity-70">Thank you for caring to your pet and trust Patcare services!
                     Here’s your booking information.
                     You can let our receptionist know by showing your booking ID
                 </p>
