@@ -25,7 +25,7 @@ export default function Footer() {
             <div>
                 <h1 className="text-2xl font-bold leading-relaxed w-80">Join as a petcare family 10% off</h1>
                 <p className="mt-5">Our service is wide open for you</p>
-                <button className="rounded-2xl  bg-transparent border-2 w-48 h-14 mt-3">Be Petcare Family</button>
+                <Link to="/MainPage" className="inline-block rounded-2xl h-14 w-48 bg-transparent border-2 mt-3 text-center pt-3">Be Petcare Family</Link>
             </div>
 
         </div>

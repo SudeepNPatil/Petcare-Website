@@ -49,7 +49,7 @@ export default function Booking() {
                 <div className="bg-green-50 rounded-b-3xl h-20 flex justify-between mt-20">
 
                     <button onClick={prevStep} disabled={step === 1} className={`${step === 1 ? 'opacity-50 cursor-not-allowed' : ''} w-32 h-10 bg-gray-400 rounded-full self-center ml-5 `}>Back</button>
-                    <button onClick={nextStep} disabled={step === 4} className={`${step === 4 ? 'opacity-50 cursor-not-allowed' : ''} w-32 h-10 bg-blue-600 rounded-full self-center mr-5 `}>Continue</button>
+                    <button type="submit" onClick={nextStep} disabled={step === 4} className={`${step === 4 ? 'opacity-50 cursor-not-allowed' : ''} w-32 h-10 bg-blue-600 rounded-full self-center mr-5 `}>Continue</button>
 
                 </div>
 

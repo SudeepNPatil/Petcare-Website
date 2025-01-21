@@ -30,13 +30,13 @@ export default function Booking_step1({ setcollectdata }) {
                 <div className="flex flex-col">
 
                     <label htmlFor="firstName" className="font-normal mt-8">First Name</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" required />
 
                     <label htmlFor="Mobile number" className="font-normal mt-8">Mobile Number</label>
-                    <input type="Number" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" />
+                    <input type="Number" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" required />
 
                     <label htmlFor="Address" className="font-normal mt-8">Address</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 p-2" required />
 
                 </div>
 
@@ -44,10 +44,10 @@ export default function Booking_step1({ setcollectdata }) {
                 <div className="flex flex-col">
 
                     <label htmlFor="LastName" className="font-normal mt-8 ml-14">Last Name</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" required />
 
                     <label htmlFor="Email" className="font-normal mt-8 ml-14">Email</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" required />
 
 
                 </div>
@@ -60,15 +60,15 @@ export default function Booking_step1({ setcollectdata }) {
                 Pet Information
             </div>
 
-            <div className="flex flex-row justify-start ml-20">
+            <form className="flex flex-row justify-start ml-20">
 
                 <div className="flex flex-col">
 
                     <label htmlFor="Pet Name" className="font-normal mt-8">Pet Name</label>
-                    <input type="text" name="PetName" onChange={handleChange} className="p-2 text-sm border w-96 h-10 rounded-lg mt-1" />
+                    <input type="text" name="PetName" onChange={handleChange} className="p-2 text-sm border w-96 h-10 rounded-lg mt-1" required />
 
                     <label htmlFor="Breed" className="font-normal mt-8">Breed</label>
-                    <input type="text" name="Breed" onChange={handleChange} className="p-2 text-sm border w-96 h-10 rounded-lg mt-1" />
+                    <input type="text" name="Breed" onChange={handleChange} className="p-2 text-sm border w-96 h-10 rounded-lg mt-1" required />
 
                     <label htmlFor="Period Of illeness" className="font-normal mt-8">Period Of illeness</label>
                     <select className="text-sm border w-96 h-10 rounded-lg mt-1 p-2">
@@ -97,16 +97,16 @@ export default function Booking_step1({ setcollectdata }) {
 
 
                     <label htmlFor="Age" className="font-normal mt-8 ml-14">Age</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" name="Age" onChange={handleChange} />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" name="Age" onChange={handleChange} required />
 
 
 
                     <label htmlFor="Problem" className="font-normal mt-8 ml-14">Problem</label>
-                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" name="Problem" onChange={handleChange} />
+                    <input type="text" className="text-sm border w-96 h-10 rounded-lg mt-1 ml-14 p-2" name="Problem" onChange={handleChange} required />
 
                 </div>
 
-            </div>
+            </form>
 
 
         </div>
