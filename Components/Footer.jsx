@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 export default function Footer() {
     return (
@@ -20,6 +26,17 @@ export default function Footer() {
                 <h1 className="text-2xl font-bold leading-relaxed">Stay Connected</h1>
                 <p className="mt-2">Contact</p>
                 <p>hello.petcare@petcare.com</p>
+                <div className="flex flex-row mt-5 gap-3">
+                    <a href="https://instagram.com"><FaInstagram size={25} /> </a>
+
+                    <a href="https://facebook.com"><FaFacebookMessenger size={25} /> </a>
+
+                    <a href="https://twitter.com"><FaTwitter size={25} /> </a>
+
+                    <a href="https://linkedin.com"><FaLinkedin size={25} /> </a>
+
+
+                </div>
             </div>
 
             <div>

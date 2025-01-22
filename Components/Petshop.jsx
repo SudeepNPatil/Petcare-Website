@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import Listofpetshops from "./Listofpetshops";
 import Info from "./Info";
+import Heading_ofPetshop from "./Heading_of Petshop";
+import Navbar from "./Navbar";
+
 
 
 
@@ -47,32 +50,18 @@ export default function Petshop() {
     return (
         <div className="flex flex-col w-full h-full flex-nowrap">
 
-            <h1 className="text-xl font-bold mt-5 self-center">Enter the Your City Name to Search Pet Shop Nearby </h1>
-            <span className="absolute top-[75px] opacity-60 pl-3 left-96"><FiSearch size={25} /></span>
+            <Navbar />
+
+            <h1 className="text-xl font-bold mt-52 self-center">Enter the Your City Name to Search Pet Shop Nearby </h1>
+            <span className="absolute top-[263px] opacity-60 left-[372px] pl-5  z-20"><FiSearch size={25} /></span>
             <input type="text" name="location" onKeyDown={handlekeypress} onChange={handleChange} placeholder="Ente Your Location Name" className="self-center text-sm border w-1/2 mt-4 rounded-2xl h-12 pl-16 shadow-xl bg-blue-50" />
 
-            <div className="flex flex-row justify-around mt-20">
 
-                <h1 className="text-2xl font-semibold mr-72">List of Pet Shops</h1>
+            {petinfo != 0 && <Heading_ofPetshop />}
 
-                <h1 className="text-2xl font-semibold mr-72">Shop details</h1>
+            <div className="flex flex-row">
 
-            </div>
-
-            <div className="flex flex-row mt-10">
-
-                <div className="flex-shrink-0">
-
-                    <table className="border-b-0 border-black  border w-96 ml-20 bg-yellow-300">
-
-                        <thead>
-                            <tr>
-                                <th className="border-b-0 border-black border-r w-20 h-16">Place Id</th>
-                                <th className="w-32 h-16">Shop Name</th>
-                            </tr>
-                        </thead>
-
-                    </table>
+                <div>
 
                     {
                         petinfo.map((data, index) => (
@@ -103,7 +92,9 @@ export default function Petshop() {
                     ))}
 
                 </div>
+
             </div>
+
         </div>
 
 
