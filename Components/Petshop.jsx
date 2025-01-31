@@ -53,7 +53,7 @@ export default function Petshop() {
             <Navbar />
 
             <h1 className="text-xl font-bold mt-52 self-center">Enter the Your City Name to Search Pet Shop Nearby </h1>
-            <span className="absolute top-[263px] opacity-60 left-[372px] pl-5  z-20"><FiSearch size={25} /></span>
+            <span className="absolute top-[263px] opacity-60 left-[360px]  z-20"><FiSearch size={25} /></span>
             <input type="text" name="location" onKeyDown={handlekeypress} onChange={handleChange} placeholder="Ente Your Location Name" className="self-center text-sm border w-1/2 mt-4 rounded-2xl h-12 pl-16 shadow-xl bg-blue-50" />
 
 
